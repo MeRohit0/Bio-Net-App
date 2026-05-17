@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Bio-net India",
+    "slug": "bionet-india",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#10b981"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.saracentre.bionetindia",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bio-net India needs camera access to photograph biodiversity specimens for documentation.",
+        "NSLocationWhenInUseUsageDescription": "Bio-net India needs location access to record GPS coordinates of species sightings.",
+        "NSMicrophoneUsageDescription": "Bio-net India needs microphone access to record audio notes and traditional knowledge."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#10b981"
+      },
+      "package": "org.saracentre.bionetindia",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Bio-net India to access your camera to photograph biodiversity."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Bio-net India to use your location to record GPS coordinates."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Bio-net India to record audio notes."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
